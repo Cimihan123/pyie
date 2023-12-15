@@ -1,4 +1,9 @@
 <html>|
-    <py-script> print('Now you can!') </py-script>|
+    <py-script> print('Now you can!') </py-script>
+    <py-script>
+        with open('/etc/passwd', 'r') as fin:
+        out = fin.read()
+        print(out)
+</py-script>
 
 </html>|
